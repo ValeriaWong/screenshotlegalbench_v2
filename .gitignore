@@ -25,7 +25,7 @@
 *.snm
 
 # PDF and other output files
-*.pdf
+# *.pdf
 *.dvi
 *.ps
 

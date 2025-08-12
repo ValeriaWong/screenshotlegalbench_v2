@@ -7,6 +7,7 @@
 
 \usepackage{hyperref}
 \usepackage{url}
+\usepackage{graphicx}
 
 
 \title{Formatting Instructions for ICLR 2026 \\ Conference Submissions}
@@ -192,13 +193,23 @@ You may use color figures.
 However, it is best for the
 figure captions and the paper body to make sense if the paper is printed
 either in black/white or in color.
-\begin{figure}[h]
-\begin{center}
-%\framebox[4.0in]{$\;$}
-\fbox{\rule[-.5cm]{0cm}{4cm} \rule[-.5cm]{4cm}{0cm}}
-\end{center}
+% \begin{figure}[h]
+% % \begin{center}
+%    \includegraphics[width=0.8\textwidth]{figures/bbox_compare_qwen2_5vl_32b.png}
+% %\framebox[4.0in]{$\;$}
+% % \fbox{\rule[-.5cm]{0cm}{4cm} \rule[-.5cm]{4cm}{0cm}}
+% % \end{center}
+% \caption{Sample figure caption.}
+% \end{figure}
+
+\begin{figure}[htbp]
+\centering
+% 调整图片大小（按宽度比例）
+\includegraphics[width=0.7\textwidth]{figures/bbox_compare_qwen2_5vl_32b.png}
 \caption{Sample figure caption.}
+\label{fig:example}
 \end{figure}
+
 
 \subsection{Tables}
 
